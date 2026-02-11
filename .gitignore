@@ -14,6 +14,7 @@ SubAgentsSet/**/state/
 .venv/
 venv/
 node_modules/
+ROADMAP.md
 
 # OS / editor noise
 .DS_Store
