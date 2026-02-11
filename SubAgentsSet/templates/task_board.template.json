@@ -1,0 +1,42 @@
+{
+  "schema_version": "1.0",
+  "team_name": "<TEAM_NAME>",
+  "run_id": "<RUN_ID>",
+  "created_at": "<YYYY-MM-DDTHH:MM:SS>",
+  "project_root": "<PROJECT_ROOT>",
+  "lead": {
+    "id": "lead",
+    "role": "orchestrator"
+  },
+  "members": [
+    {
+      "id": "tm-01",
+      "role": "researcher",
+      "model": "inherit"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-001",
+      "title": "<TASK_TITLE>",
+      "owner": "tm-01",
+      "status": "pending",
+      "depends_on": [],
+      "scope": "<TASK_SCOPE>",
+      "target_files": [
+        "<SET_TARGET_FILE>"
+      ],
+      "done_when": [
+        "<CHECK_1>",
+        "<CHECK_2>"
+      ],
+      "deliverable": "reports/T-001.md"
+    }
+  ],
+  "rules": {
+    "no_recursive_subagents": true,
+    "no_target_file_overlap": true,
+    "lead_handles_cleanup": true,
+    "teammate_reports_required": true
+  }
+}

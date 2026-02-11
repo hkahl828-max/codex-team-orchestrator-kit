@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "profile": "light-report-only",
+  "team_name": "light-team-example",
+  "run_id": "light-team-example-0001",
+  "created_at": "2026-02-11T19:00:00",
+  "project_root": ".",
+  "lead": {
+    "id": "lead",
+    "role": "orchestrator"
+  },
+  "members": [
+    {
+      "id": "tm-01",
+      "role": "analyst-a",
+      "model": "inherit"
+    },
+    {
+      "id": "tm-02",
+      "role": "analyst-b",
+      "model": "inherit"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-000",
+      "title": "Set scope and quality bar",
+      "owner": "lead",
+      "status": "pending",
+      "depends_on": [],
+      "scope": "Define the analysis scope and report quality criteria for both workers.",
+      "target_files": [],
+      "done_when": [
+        "Both workers have explicit scope",
+        "No overlap in ownership"
+      ],
+      "deliverable": "reports/T-000.md"
+    },
+    {
+      "id": "T-001",
+      "title": "Analyze track A",
+      "owner": "tm-01",
+      "status": "pending",
+      "depends_on": [
+        "T-000"
+      ],
+      "scope": "Analyze track A and write findings only.",
+      "target_files": [
+        "reports/tm-01-T-001.md"
+      ],
+      "done_when": [
+        "Report includes findings, risks, next steps",
+        "No code files modified"
+      ],
+      "deliverable": "reports/tm-01-T-001.md"
+    },
+    {
+      "id": "T-002",
+      "title": "Analyze track B",
+      "owner": "tm-02",
+      "status": "pending",
+      "depends_on": [
+        "T-000"
+      ],
+      "scope": "Analyze track B and write findings only.",
+      "target_files": [
+        "reports/tm-02-T-002.md"
+      ],
+      "done_when": [
+        "Report includes findings, risks, next steps",
+        "No code files modified"
+      ],
+      "deliverable": "reports/tm-02-T-002.md"
+    }
+  ],
+  "rules": {
+    "no_recursive_subagents": true,
+    "no_target_file_overlap": true,
+    "lead_handles_cleanup": true,
+    "teammate_reports_required": true
+  }
+}

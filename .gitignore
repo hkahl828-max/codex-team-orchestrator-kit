@@ -1,0 +1,25 @@
+# Runtime artifacts
+SubAgentsSet/logs/
+SubAgentsSet/team_runs/*/
+!SubAgentsSet/team_runs/.gitkeep
+
+# Generated prompts/reports/mailbox in case custom runs are committed
+SubAgentsSet/**/prompts/generated/
+SubAgentsSet/**/reports/
+SubAgentsSet/**/mailbox/
+SubAgentsSet/**/state/
+
+# Local environment
+.env
+.venv/
+venv/
+node_modules/
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.tmp
+
+# Heavy raw snapshots (optional to keep out of public repo)
+SubAgentsSet/references/raw/*.html

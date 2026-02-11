@@ -1,0 +1,18 @@
+Create ONLY the file kb/entries/keyword_research_clusters.md.
+Do NOT modify any other file.
+You are a sub-agent. Do NOT spawn or invoke any other sub-agents.
+
+Topic: keyword research, search intent, clustering, choosing focus keyword vs supporting terms.
+Prefer authoritative sources; use moz.com/blog and/or other sources from base_di_conoscenza.md, but include at least one Google Search Central doc/blog source if relevant.
+
+Include sections:
+- Topic:
+- Sources: (URLs)
+- Accessed: 2026-02-10
+- Summary:
+- Actionable rules (plugin/prompt):
+- Plugin heuristics:
+- Failure modes:
+
+Keep it concise and operational. Avoid long quotes.
+

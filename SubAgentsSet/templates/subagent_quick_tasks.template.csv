@@ -1,0 +1,3 @@
+task_id,goal,target_file,sources,deliverable
+T-101,Review frontend accessibility and suggest improvements,docs/reports/frontend-a11y.md,https://developer.mozilla.org/docs/Web/Accessibility;https://www.w3.org/WAI/,reports/T-101.md
+T-102,Audit backend API error handling and propose fixes,docs/reports/backend-errors.md,https://restfulapi.net/http-status-codes/,reports/T-102.md

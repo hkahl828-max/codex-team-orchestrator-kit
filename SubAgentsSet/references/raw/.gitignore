@@ -1,0 +1,4 @@
+subagent_logs/
+.trash/
+.wp-env/
+debug.log

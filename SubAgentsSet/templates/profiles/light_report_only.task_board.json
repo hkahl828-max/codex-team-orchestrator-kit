@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "profile": "light-report-only",
+  "team_name": "<TEAM_NAME>",
+  "run_id": "<RUN_ID>",
+  "created_at": "<YYYY-MM-DDTHH:MM:SS>",
+  "project_root": "<PROJECT_ROOT>",
+  "lead": {
+    "id": "lead",
+    "role": "orchestrator"
+  },
+  "members": [
+    {
+      "id": "tm-01",
+      "role": "analyst-a",
+      "model": "inherit"
+    },
+    {
+      "id": "tm-02",
+      "role": "analyst-b",
+      "model": "inherit"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "T-000",
+      "title": "Set scope and evaluation criteria",
+      "owner": "lead",
+      "status": "pending",
+      "depends_on": [],
+      "scope": "Define what each teammate should analyze and what a good report contains.",
+      "target_files": [],
+      "done_when": [
+        "Each teammate has explicit analysis scope",
+        "No overlap in analysis ownership"
+      ],
+      "deliverable": "reports/T-000.md"
+    },
+    {
+      "id": "T-001",
+      "title": "Track A report",
+      "owner": "tm-01",
+      "status": "pending",
+      "depends_on": [
+        "T-000"
+      ],
+      "scope": "Analyze track A and produce a concise report.",
+      "target_files": [
+        "reports/tm-01-T-001.md"
+      ],
+      "done_when": [
+        "Report contains findings and recommendations",
+        "No non-report files modified"
+      ],
+      "deliverable": "reports/tm-01-T-001.md"
+    },
+    {
+      "id": "T-002",
+      "title": "Track B report",
+      "owner": "tm-02",
+      "status": "pending",
+      "depends_on": [
+        "T-000"
+      ],
+      "scope": "Analyze track B and produce a concise report.",
+      "target_files": [
+        "reports/tm-02-T-002.md"
+      ],
+      "done_when": [
+        "Report contains findings and recommendations",
+        "No non-report files modified"
+      ],
+      "deliverable": "reports/tm-02-T-002.md"
+    }
+  ],
+  "rules": {
+    "no_recursive_subagents": true,
+    "no_target_file_overlap": true,
+    "lead_handles_cleanup": true,
+    "teammate_reports_required": true
+  }
+}

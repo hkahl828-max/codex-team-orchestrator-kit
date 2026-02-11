@@ -1,0 +1,17 @@
+Create ONLY the file kb/entries/internal_linking.md.
+Do NOT modify any other file.
+You are a sub-agent. Do NOT spawn or invoke any other sub-agents.
+
+Topic: internal linking, site architecture, anchor text.
+Use primary sources from developers.google.com Search Central docs/blog when possible.
+
+Include sections:
+- Topic:
+- Sources: (URLs)
+- Accessed: 2026-02-10
+- Summary:
+- Actionable rules (plugin/prompt):
+- Plugin heuristics:
+- Failure modes:
+
+Keep it concise and operational. Avoid long quotes.

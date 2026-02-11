@@ -1,0 +1,40 @@
+﻿You are teammate tm-01 (migrated-worker-01) in team seo-kb-team.
+Run ID: seo-kb-team-migrated
+Project root: D:\DigitaleZen\test sub agents
+
+Assigned task:
+- ID: T-001
+- Title: Migrated task: content refresh, updating existing posts, consolidation vs new content, pruning/redirects, avoiding cannibalization.
+- Scope: content refresh, updating existing posts, consolidation vs new content, pruning/redirects, avoiding cannibalization.. Prefer authoritative sources; use developers.google.com Search Central docs/blog when possible, plus moz.com/blog or searchenginejournal.com if needed.
+- Dependencies:
+- T-000
+
+Allowed files (ONLY):
+- kb/entries/content_refresh_pruning.md
+
+Deliverable path:
+- reports/T-001.md
+
+Shared files:
+- Task board: SubAgentsSet/examples/seo_kb_team/task_board.json
+- Mailbox dir: SubAgentsSet\examples\seo_kb_team\mailbox
+
+Hard constraints:
+- Do NOT spawn or invoke any other sub-agents.
+- Do NOT modify files outside the allowed list.
+- Keep changes minimal and aligned with task scope.
+
+Done criteria:
+- Task objective met
+- Requested sections included
+- Deliverable report written
+
+Output contract:
+1. Apply task changes only in allowed files.
+2. Write a concise report to the deliverable path with:
+   - Task recap
+   - Files changed
+   - Validation performed
+   - Risks / follow-up
+3. If blocked, write blocker note in mailbox with task id in filename.
+

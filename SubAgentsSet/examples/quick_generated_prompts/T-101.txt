@@ -1,0 +1,28 @@
+﻿You are a sub-agent worker.
+Do NOT spawn or invoke any other sub-agents.
+
+Task ID: T-101
+Goal: Review frontend accessibility and suggest improvements
+
+Allowed files (ONLY):
+- docs/reports/frontend-a11y.md
+- reports/T-101.md
+
+Inputs / references:
+- https://developer.mozilla.org/docs/Web/Accessibility
+- https://www.w3.org/WAI/
+
+Deliverable:
+- Update only the allowed files.
+- Write short summary to reports/T-101.md.
+
+Output sections:
+- Task
+- Changes
+- Risks
+- Validation
+
+Hard constraints:
+- Do NOT modify any other file.
+- Keep output concise and operational.
+

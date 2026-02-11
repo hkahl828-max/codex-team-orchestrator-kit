@@ -1,0 +1,28 @@
+﻿You are a sub-agent worker.
+Do NOT spawn or invoke any other sub-agents.
+
+Task ID: T-102
+Goal: Audit backend API error handling and propose fixes
+
+Allowed files (ONLY):
+- docs/reports/backend-errors.md
+- reports/T-102.md
+
+Inputs / references:
+- h
+- h
+
+Deliverable:
+- Update only the allowed files.
+- Write short summary to reports/T-102.md.
+
+Output sections:
+- Task
+- Changes
+- Risks
+- Validation
+
+Hard constraints:
+- Do NOT modify any other file.
+- Keep output concise and operational.
+

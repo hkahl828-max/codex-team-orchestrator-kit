@@ -1,0 +1,154 @@
+﻿{
+    "schema_version":  "1.0",
+    "profile":  "legacy-prompt-migration",
+    "team_name":  "seo-kb-team",
+    "run_id":  "seo-kb-team-migrated",
+    "created_at":  "2026-02-11T18:47:59",
+    "project_root":  "D:\\DigitaleZen\\test sub agents",
+    "lead":  {
+                 "id":  "lead",
+                 "role":  "orchestrator"
+             },
+    "members":  [
+                    {
+                        "id":  "tm-01",
+                        "role":  "migrated-worker-01",
+                        "model":  "inherit"
+                    },
+                    {
+                        "id":  "tm-02",
+                        "role":  "migrated-worker-02",
+                        "model":  "inherit"
+                    }
+                ],
+    "tasks":  [
+                  {
+                      "id":  "T-000",
+                      "title":  "Review migrated legacy prompts and finalize ownership",
+                      "owner":  "lead",
+                      "status":  "pending",
+                      "depends_on":  [
+
+                                     ],
+                      "scope":  "Validate migrated tasks before execution.",
+                      "target_files":  [
+
+                                       ],
+                      "done_when":  [
+                                        "All migrated tasks reviewed",
+                                        "No target file overlaps"
+                                    ],
+                      "deliverable":  "reports/T-000.md"
+                  },
+                  {
+                      "id":  "T-001",
+                      "title":  "Migrated task: content refresh, updating existing posts, consolidation vs new content, pruning/redirects, avoiding cannibalization.",
+                      "owner":  "tm-01",
+                      "status":  "pending",
+                      "depends_on":  [
+                                         "T-000"
+                                     ],
+                      "scope":  "content refresh, updating existing posts, consolidation vs new content, pruning/redirects, avoiding cannibalization.. Prefer authoritative sources; use developers.google.com Search Central docs/blog when possible, plus moz.com/blog or searchenginejournal.com if needed.",
+                      "target_files":  [
+                                           "kb/entries/content_refresh_pruning.md"
+                                       ],
+                      "done_when":  [
+                                        "Task objective met",
+                                        "Requested sections included",
+                                        "Deliverable report written"
+                                    ],
+                      "deliverable":  "reports/T-001.md"
+                  },
+                  {
+                      "id":  "T-002",
+                      "title":  "Migrated task: internal linking, site architecture, anchor text.",
+                      "owner":  "tm-02",
+                      "status":  "pending",
+                      "depends_on":  [
+                                         "T-000"
+                                     ],
+                      "scope":  "internal linking, site architecture, anchor text.. Use primary sources from developers.google.com Search Central docs/blog when possible.",
+                      "target_files":  [
+                                           "kb/entries/internal_linking.md"
+                                       ],
+                      "done_when":  [
+                                        "Task objective met",
+                                        "Requested sections included",
+                                        "Deliverable report written"
+                                    ],
+                      "deliverable":  "reports/T-002.md"
+                  },
+                  {
+                      "id":  "T-003",
+                      "title":  "Migrated task: keyword research, search intent, clustering, choosing focus keyword vs supporting terms.",
+                      "owner":  "tm-01",
+                      "status":  "pending",
+                      "depends_on":  [
+                                         "T-000"
+                                     ],
+                      "scope":  "keyword research, search intent, clustering, choosing focus keyword vs supporting terms.. Prefer authoritative sources; use moz.com/blog and/or other sources from base_di_conoscenza.md, but include at least one Google Search Central doc/blog source if relevant.",
+                      "target_files":  [
+                                           "kb/entries/keyword_research_clusters.md"
+                                       ],
+                      "done_when":  [
+                                        "Task objective met",
+                                        "Requested sections included",
+                                        "Deliverable report written"
+                                    ],
+                      "deliverable":  "reports/T-003.md"
+                  },
+                  {
+                      "id":  "T-004",
+                      "title":  "Migrated task: XML sitemaps, robots.txt, meta robots (index/noindex), basic crawling/indexing controls.",
+                      "owner":  "tm-02",
+                      "status":  "pending",
+                      "depends_on":  [
+                                         "T-000"
+                                     ],
+                      "scope":  "XML sitemaps, robots.txt, meta robots (index/noindex), basic crawling/indexing controls.. Use primary sources from developers.google.com Search Central docs/blog when possible.",
+                      "target_files":  [
+                                           "kb/entries/sitemaps_robots_indexing.md"
+                                       ],
+                      "done_when":  [
+                                        "Task objective met",
+                                        "Requested sections included",
+                                        "Deliverable report written"
+                                    ],
+                      "deliverable":  "reports/T-004.md"
+                  },
+                  {
+                      "id":  "T-005",
+                      "title":  "Migrated task: snippets, meta description, how Google generates snippets, CTR considerations.",
+                      "owner":  "tm-01",
+                      "status":  "pending",
+                      "depends_on":  [
+                                         "T-000"
+                                     ],
+                      "scope":  "snippets, meta description, how Google generates snippets, CTR considerations.. Use primary sources from developers.google.com Search Central docs/blog when possible.",
+                      "target_files":  [
+                                           "kb/entries/snippets_meta_description.md"
+                                       ],
+                      "done_when":  [
+                                        "Task objective met",
+                                        "Requested sections included",
+                                        "Deliverable report written"
+                                    ],
+                      "deliverable":  "reports/T-005.md"
+                  }
+              ],
+    "rules":  {
+                  "no_recursive_subagents":  true,
+                  "no_target_file_overlap":  true,
+                  "lead_handles_cleanup":  true,
+                  "teammate_reports_required":  true
+              },
+    "metadata":  {
+                     "migrated_from":  [
+                                           "D:\\DigitaleZen\\test sub agents\\SubAgentsSet\\prompts\\content_refresh_pruning.txt",
+                                           "D:\\DigitaleZen\\test sub agents\\SubAgentsSet\\prompts\\internal_linking.txt",
+                                           "D:\\DigitaleZen\\test sub agents\\SubAgentsSet\\prompts\\keyword_research_clusters.txt",
+                                           "D:\\DigitaleZen\\test sub agents\\SubAgentsSet\\prompts\\sitemaps_robots.txt",
+                                           "D:\\DigitaleZen\\test sub agents\\SubAgentsSet\\prompts\\snippets_meta.txt"
+                                       ]
+                 }
+}

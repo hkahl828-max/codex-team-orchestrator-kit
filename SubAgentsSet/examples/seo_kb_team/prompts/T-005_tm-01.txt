@@ -1,0 +1,40 @@
+﻿You are teammate tm-01 (migrated-worker-01) in team seo-kb-team.
+Run ID: seo-kb-team-migrated
+Project root: D:\DigitaleZen\test sub agents
+
+Assigned task:
+- ID: T-005
+- Title: Migrated task: snippets, meta description, how Google generates snippets, CTR considerations.
+- Scope: snippets, meta description, how Google generates snippets, CTR considerations.. Use primary sources from developers.google.com Search Central docs/blog when possible.
+- Dependencies:
+- T-000
+
+Allowed files (ONLY):
+- kb/entries/snippets_meta_description.md
+
+Deliverable path:
+- reports/T-005.md
+
+Shared files:
+- Task board: SubAgentsSet/examples/seo_kb_team/task_board.json
+- Mailbox dir: SubAgentsSet\examples\seo_kb_team\mailbox
+
+Hard constraints:
+- Do NOT spawn or invoke any other sub-agents.
+- Do NOT modify files outside the allowed list.
+- Keep changes minimal and aligned with task scope.
+
+Done criteria:
+- Task objective met
+- Requested sections included
+- Deliverable report written
+
+Output contract:
+1. Apply task changes only in allowed files.
+2. Write a concise report to the deliverable path with:
+   - Task recap
+   - Files changed
+   - Validation performed
+   - Risks / follow-up
+3. If blocked, write blocker note in mailbox with task id in filename.
+

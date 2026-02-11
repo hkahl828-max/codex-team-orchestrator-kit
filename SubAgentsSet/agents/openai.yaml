@@ -1,0 +1,3 @@
+interface:
+  display_name: "Subagent Team Orchestrator"
+  short_description: "Portable Codex kit for sub-agents and team-style orchestration"

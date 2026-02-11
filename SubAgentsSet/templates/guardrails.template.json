@@ -1,0 +1,20 @@
+{
+  "max_subagents_total": 4,
+  "max_parallel_workers": 3,
+  "require_disjoint_target_files": true,
+  "no_recursive_subagents": true,
+  "require_lead_approval_for_code_changes": true,
+  "allow_code_changes": false,
+  "default_mode": "report-only",
+  "domain_catalog": [
+    "frontend-ux-review",
+    "backend-api-review",
+    "testing-quality-review",
+    "data-persistence-review",
+    "infra-runtime-review",
+    "docs-developer-experience",
+    "security-risk-review",
+    "performance-hotspots-review",
+    "general-code-quality-review"
+  ]
+}

@@ -1,0 +1,18 @@
+Create ONLY the file kb/entries/content_refresh_pruning.md.
+Do NOT modify any other file.
+You are a sub-agent. Do NOT spawn or invoke any other sub-agents.
+
+Topic: content refresh, updating existing posts, consolidation vs new content, pruning/redirects, avoiding cannibalization.
+Prefer authoritative sources; use developers.google.com Search Central docs/blog when possible, plus moz.com/blog or searchenginejournal.com if needed.
+
+Include sections:
+- Topic:
+- Sources: (URLs)
+- Accessed: 2026-02-10
+- Summary:
+- Actionable rules (plugin/prompt):
+- Plugin heuristics:
+- Failure modes:
+
+Keep it concise and operational. Avoid long quotes.
+
